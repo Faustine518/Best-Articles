@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>淤青战争</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 引入极简清爽的主题外壳 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- 自定义高级美化设置 -->
+  <style>
+    body {
+      /* 优雅的阅读字体与字间距 */
+      font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 2.2;
+      letter-spacing: 0.5px;
+      color: #3f3f3f; /* 高级深灰字体，比纯黑更护眼 */
+      background-color: #faf9f6; /* 纸质质感的米白色背景 */
+    }
+    .markdown-section {
+      max-width: 750px; /* 控制最佳阅读宽度 */
+    }
+    .markdown-section h1, .markdown-section h2 {
+      color: #5c7a89; /* 标题使用莫兰迪灰蓝色 */
+      font-weight: 600;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #dcdcdc; /* 标题下方的虚线分割 */
+      margin-top: 50px;
+    }
+    .app-nav, .sidebar {
+      background-color: #faf9f6; /* 让侧边栏目录和背景融为一体 */
+    }
+  </style>
+</head>
+<body>
+  <div id="app">少女们的末日生存记录加载中...</div>
+  <script>
+    window.$docsify = {
+      name: '<b>淤青战争</b>', // 网站左上角的名字
+      homepage: 'yuqing.md', // 自动读取你的小说文件
+      subMaxLevel: 2, // 重点！自动把你的“## 01 Pain Drop”提取成侧边栏目录
+      themeColor: '#5c7a89', // 整体主题的高亮颜色
+      auto2top: true // 切换章节时自动回到顶部
+    }
+  </script>
+  <!-- 网页引擎核心 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
